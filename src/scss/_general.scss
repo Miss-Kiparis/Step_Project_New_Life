@@ -1,0 +1,27 @@
+.page__body {
+  padding: 0;
+  margin: 0;
+  font: 100% $font-stack;
+  color: $title-color;
+}
+
+.header__container {
+  padding: 0 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page__aboutFork {
+  background: center / cover url("../img/bg-aboutFork.png");
+  max-height: 1620px;
+}
+
+.aboutFork__box {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: $font-stack--content;
+}
