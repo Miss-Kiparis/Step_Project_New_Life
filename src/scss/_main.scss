@@ -1,0 +1,250 @@
+//main
+// Revolutionary editor
+.block__container-main-back {
+  background-color: $main-back;
+}
+.main {
+  &__title {
+    @include main-title;
+
+    @media (min-width: 481px) {
+      font-size: 1.625rem;
+      line-height: 1.75rem;
+    }
+
+    @media (min-width: 500px) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    @media (min-width: 781px) {
+      font-size: 2.625rem;
+      line-height: 2.265rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 3.375rem;
+      line-height: 3.375rem;
+    }
+  }
+
+  &__text {
+    @include main-text;
+
+    @media (min-width: 481px) {
+      font-size: 1.1rem;
+      line-height: 2rem;
+    }
+
+    @media (min-width: 781px) {
+      font-size: 1.31rem;
+      line-height: 2rem;
+    }
+
+    @media (min-width: 980px) {
+      margin: 0 7.13rem;
+      font-size: 1.31rem;
+      line-height: 2rem;
+    }
+  }
+}
+.icons {
+  @include icons;
+}
+.icon {
+  &__link-two:not(:last-child) {
+    margin-right: 0.8rem;
+  }
+
+  &__link {
+    @include icon-link;
+  }
+
+  &__text {
+    @include icon-text;
+    display: inline;
+  }
+
+  &__link-two {
+    @include icon-link-two;
+  }
+
+  @media screen and (min-width: 320px) {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    max-width: none;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    max-width: 320px;
+  }
+  @media screen and (max-width: 993px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    max-width: 320px;
+  }
+
+}
+// .imgs{
+//     height: auto;
+//     width: 100%;
+//     /* еще больше контроля с max-width */
+//     max-width: 768px;
+// }
+// Revolutionary editor
+
+//section-two-here--get
+.title-h2 {
+  padding-top: 3.869rem;
+  text-align: center;
+  @include title-h2;
+
+  @media screen and (min-width: 481px) {
+    font-size: 2.625rem;
+    line-height: 2.75rem;
+  }
+
+  @media screen and (min-width: 993px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 3rem;
+    line-height: 3.125rem;
+  }
+}
+.info {
+  @include block-info;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .title-h2-none {
+    display: none;
+  }
+
+  &__img {
+    &_icon-one {
+      padding-bottom: 1.688rem;
+    }
+
+    &_icon-two {
+      padding-bottom: 1.688rem;
+    }
+
+    &_icon-three {
+      padding-bottom: 1.688rem;
+    }
+
+    &_icon-foure {
+      padding-bottom: 1.688rem;
+    }
+  }
+
+  &__title-h4 {
+    @include title-h4;
+  }
+
+  &__text {
+    @include info-text;
+  }
+
+  &__h2 {
+    display: none;
+  }
+  @media screen and (min-width: 481px) {
+    text-align: start;
+
+    &__img {
+      &_icon-one {
+        padding-right: 1rem;
+      }
+
+      &_icon-two {
+        padding-right: 2rem;
+      }
+
+      &_icon-three {
+        padding-right: 2.813rem;
+        padding-left: 0.6rem;
+      }
+
+      &_icon-foure {
+        padding-right: 2.813rem;
+        padding-left: 0.4rem;
+      }
+    }
+
+    &__titel-h4 {
+      line-height: 1.313rem;
+    }
+
+    &__text {
+      font-size: 0.875rem;
+      line-height: 1.313rem;
+      max-width: 562px;
+    }
+
+    &__wrapper-one {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__pictures {
+      text-align: end;
+    }
+    &__h2-none {
+      display: none;
+    }
+
+    .container-grid {
+      margin: 2rem;
+      display: grid;  
+      grid-template-areas:
+        "grid-one grid-img"
+        "grid-two grid-img"
+        "grid-three grid-img"
+        "grid-four grid-img";
+    }
+
+    .grid-one {
+      grid-area: grid-one;
+    }
+    .grid-two {
+      grid-area: grid-two;
+    }
+    .grid-three {
+      grid-area: grid-three;
+    }
+    .grid-four {
+      grid-area: grid-four;
+    }
+    .grid-img {
+      grid-area: grid-img;
+    }
+    .title-h2-none {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 993px) {
+    .title-h2-none {
+      display: flex;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 3rem;
+    line-height: 3.125rem;
+  }
+}
+//section-two-here--get
+//main
+
