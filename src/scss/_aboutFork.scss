@@ -1,6 +1,5 @@
 .page__aboutFork {
   background: center / cover url("../img/bg-aboutFork.png");
-  min-height: 1620px;
 }
 
 .aboutFork__title {
@@ -62,7 +61,7 @@
 }
 
 .partners__desc {
-  font-family: font-stack--content;
+  font-family: $font-stack--content;
   @include font-general;
   font-size: 14px;
   line-height: 21px;
